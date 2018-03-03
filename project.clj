@@ -4,7 +4,8 @@
   :min-lein-version "2.0.0"
   :dependencies [[org.clojure/clojure "1.9.0"]
                  [compojure "1.6.0"]
-                 [ring/ring-defaults "0.2.1"]
+                 [ring/ring-defaults "0.3.1"]
+                 [ring/ring-json "0.4.0"]
 
                  [buddy/buddy-auth "2.1.0"]
 
@@ -12,6 +13,10 @@
                  [ragtime "0.7.2"]
                  [org.clojure/java.jdbc "0.7.5"]
                  [org.postgresql/postgresql "9.4.1212.jre7"]
+
+                 [ring-webjars "0.1.1"]
+                 [hiccup "1.0.5"]
+                 [org.webjars/bootstrap "4.0.0-1"]
                  ]
   :plugins [[lein-ring "0.12.3"]]
   :ring {:handler inventory-service.handler/app}
