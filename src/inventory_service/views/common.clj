@@ -10,7 +10,10 @@
 
 (defn nav-bar
   "Renders a navigation bar somewhere"
-  [])
+  []
+  [:ul.nav
+   [:li.nav-item
+    [:a.nav-link.active {:href "/categories/"} "Categories"]]])
 
 (defmacro bootstrap-page
   [misc & elts]
