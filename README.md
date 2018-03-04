@@ -13,12 +13,12 @@ The application currently expects a postgres database to exist, there is a docke
 ## Running
 The application usess [Ragtime](https://github.com/weavejester/ragtime) to create the database and do migrations. To spin up to the latest version use:
 
-    lein ring migrate
+    lein migrate
 
 
 To rollback
 
-    lein ring rollback
+    lein rollback
 
 To start a web server for the application, run:
 
